@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <style>
+      .form-container {
+        background-image: url(/form/images/bj.jpg);
+        background-size: cover;
+        min-height: 100vh;
+      }
+      .form-control {
+        justify-self: center;
+        background-color: white;
+        padding: 24px;
+      }
+      .form-content {
+        margin-bottom: 2vh;
+      }
+      .form-content input {
+        width: 36vw;
+        padding: 10px;
+        border: solid 2px brown;
+        border-radius: 20px;
+      }
+      .form-content input:focus {
+        color: red;
+        outline: none;
+        border-color: red;
+      }
+      .form-content select {
+        width: 36vw;
+        padding: 10px;
+        border: solid 2px brown;
+        border-radius: 20px;
+      }
+      .form-button {
+        justify-self: center;
+        margin-top: 4vh;
+      }
+      #btn {
+        background-color: brown;
+        color: white;
+        padding: 12px;
+        border-radius: 30%;
+        border: none;
+      }
+      #btn:hover {
+        background-color: white;
+        color: brown;
+        border: solid 2px brown;
+      }
+      #btn:active {
+        background-color: rgb(170, 101, 101);
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="form-container">
+      <form class="form-control">
+        <div>
+          <h1 style="text-align: center">Sign Up</h1>
+        </div>
+
+        <div class="form-content">
+          <label for="">Name:</label>
+          <input type="Name" placeholder="e,g Ajayi Joy Mary" required />
+        </div>
+
+        <div class="form-content">
+          <label for="">Date Of Birth:</label>
+          <input type="datetime-local" required />
+        </div>
+
+        <div class="form-content">
+          <label for="">Sex: </label>
+          <select>
+            <option value="">Male</option>
+            <option value="">Female</option>
+            <option value="">Prefer not to say</option>
+          </select>
+        </div>
+
+        <div class="form-content">
+          <label for="">Address:</label>
+          <input
+            type="Address"
+            placeholder="e.g A39 temidire........"
+            required />
+        </div>
+
+        <div class="form-content">
+          <label for="">Email:</label>
+          <input type="email" placeholder="e.g @gmail.com" required />
+        </div>
+
+        <div class="form-content">
+          <label for="">Phone Number:</label>
+          <input type="number" placeholder="e.g +234........" required />
+        </div>
+
+        <div class="form-content">
+          <label for="">State Of Origin: </label>
+          <input type="text" placeholder="e.g Lagos" required />
+        </div>
+
+        <div class="form-content">
+          <label for="">Nationality:</label>
+          <select>
+            <option value="">Nigerian</option>
+            <option value="">Ghanian</option>
+            <option value="">Kenya</option>
+            <option value="">Tanzanian</option>
+          </select>
+        </div>
+
+        <div class="form-content">
+          <label for="">Home Town:</label>
+          <input type="text" placeholder="iloffa etc" required />
+        </div>
+
+        <div class="form-content">
+          <label for="">Mother's Maiden Name:</label>
+          <input type="text" placeholder=" e.g Ayorinde etc" required />
+        </div>
+
+        <div class="form-content">
+          <label for="">L.G.A:</label>
+          <select>
+            <option value="">Oke- Ero</option>
+            <option value="">Ifelodun</option>
+            <option value="">Asa</option>
+            <option value="">Ilorin South</option>
+            <option value="">Ilorin West</option>
+            <option value="">Fufu</option>
+          </select>
+        </div>
+
+        <div class="form-button">
+          <button id="btn" type="submit">Sign Up</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
